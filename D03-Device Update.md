@@ -194,6 +194,13 @@ router.post('/', function(req, res, next) {
 //匯出
 module.exports = router;
 ```
+## notFound.ejs
+```
+<script>
+    alert("找不到資料");
+    location.href = "/";
+</script>   
+```
 ## updateSuccess.ejs
 ```
 <script>
