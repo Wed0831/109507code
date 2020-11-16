@@ -1,4 +1,4 @@
-# E02-Bookingroom Verify
+# E02-BookingRoom Verify
 ## asyncDB.js
 ```
 'use strict';
