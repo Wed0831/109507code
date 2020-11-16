@@ -1,4 +1,4 @@
-# E01-Booking Room
+# E01-BookingRoom
 ## asyncDB.js
 ```
 'use strict';
