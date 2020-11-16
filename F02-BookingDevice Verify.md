@@ -296,7 +296,7 @@ var deviceverify_update_no = require('./routes/deviceverify_update_no');//審核
 var deviceverify_update_form = require('./routes/deviceverify_update_form');
 var deviceverify_update = require('./routes/deviceverify_update');
 
-app.use('/deviceverify/update/no', deviceverify_update_no);//審核
-app.use('/deviceverify/update/form', deviceverify_update_form);
-app.use('/deviceverify/update', deviceverify_update);
+app.use('/deviceverify/update/no', checkAuth_E, deviceverify_update_no);//審核
+app.use('/deviceverify/update/form', checkAuth_E, deviceverify_update_form);
+app.use('/deviceverify/update', checkAuth_E, deviceverify_update);
 ```
