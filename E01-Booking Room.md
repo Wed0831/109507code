@@ -634,4 +634,10 @@ var bookingroom = require('./routes/bookingroom');//新增
 
 app.use('/bookingroom/form', checkAuth_ST, bookingroom_form); //教室借用
 app.use('/bookingroom', checkAuth_ST, bookingroom); //新增
+
+//----------------------------------------
+// 可由外部直接取用資料夾
+//----------------------------------------
+app.use(express.static('public/picture'));
+//-----------------------------------------
 ```
